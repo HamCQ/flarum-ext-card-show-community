@@ -1,0 +1,23 @@
+hamcq-qsl-card-show:
+  admin:
+    my_cool_key: My Cool Key
+
+  forum:
+    title:
+      page_title: 照片展
+      share_my_card: 分享我的照片
+    filter:
+      all_label: 所有
+      score_label: 获赞最多
+      recent_label: 新鲜出炉
+      view_label: 最多翻阅
+    alerts:
+      less_select: 抱歉，最多只能选择 2 张图片
+    notification:
+      like: "{username} 对您分享的卡片表示很赞"
+    button:
+      share_my_card: 分享我的卡片
+      loading: 上传中
+      upload: 点此上传
+    tips:
+      upload_tips: 每次分享，最多可选择 2 张照片，第一次选中的照片将作为封面

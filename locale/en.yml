@@ -1,0 +1,25 @@
+hamcq-qsl-card-show:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  admin:
+    my_cool_key: My Cool Key
+
+  forum:
+    title:
+      page_title: Picture Show
+      share_my_card: Share My Photos
+    filter:
+      all_label: All
+      score_label: Top
+      recent_label: Recent
+      view_label: Viewer
+    alerts:
+      less_select: Sorry, maximum 2 images
+    notification:
+      like: "{username} Like your Picture Show"
+    button:
+      share_my_card: Share My Photos
+      loading: Loading
+      upload: Upload
+    tips:
+      upload_tips: Each time you share, you can select up to 2 photos, and the first selected photo will be used as the cover.

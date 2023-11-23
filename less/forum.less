@@ -1,0 +1,135 @@
+.CardShow {
+    margin-top: 15px;
+    display: grid;
+    grid-auto-rows: 100px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, minmax(25%, 1fr));
+    .card {
+      grid-row: span 1;
+      border-radius: 5px;
+      padding: 5px;
+      position: relative;
+      border-color: #bdbdbd;
+      border-width: thin;
+      border-style: solid;
+    }
+    .short {
+      grid-row: span 1;     
+    }
+    .tall {
+      grid-row: span 2;
+    }
+    .taller {
+      grid-row: span 3;
+    }
+    .content{
+      overflow: hidden;
+      max-height: 85%;
+      // border-width: thin;
+      // border-color: #bdbdbd;
+      // border-style: dotted;
+      // border-radius: 5px;
+    }
+    .footer{
+      bottom: 0;
+      position: absolute;
+      margin: 5px;
+      width: 90%;
+    }
+    .viewer{
+      background-color: transparent;
+      padding: 0;
+      margin-right: 10px;
+    }
+    .like{
+      background-color: transparent;
+      padding: 0;
+    }
+    .bulk{
+      background-color: transparent;
+      padding: 0;
+      margin-left: 10px;
+    }
+    .avatar{
+      width: 25px;
+      height: 25px;
+      font-size: 16px;
+    }
+    .action{
+      float: right;
+    }
+    .username{
+      margin-left: 5px;
+      font-size: 13px;
+      color: var(--muted-color)
+    }
+}
+
+@media @phone {
+    .CardShow {
+        grid-auto-rows: 130px;
+        grid-template-columns: repeat(2, minmax(25%, 1fr));
+        .avatar{
+          width: 20px;
+          height: 20px;
+          font-size: 16px;
+        }
+        .tall {
+          grid-row: span 1;
+        }
+        .taller {
+          grid-row: span 2;
+        }
+        .content{
+          overflow: hidden;
+          max-height: 75%;
+        }
+        .viewer{
+          display: none;
+        }
+    }    
+}
+
+.FilterMenuItem-button--follow {
+  & when (@config-dark-mode = false) {
+    .Button--color(#de8e00, #fff2ae);
+  }
+  & when (@config-dark-mode = true) {
+    .Button--color(#784d00, #fbb94c);
+  }
+}
+.FilterMenuItem .Dropdown-menu {
+  min-width: 260px;
+}
+.FilterMenuItem-label {
+  padding-left: 25px;
+  display: block;
+  white-space: normal;
+
+  & strong {
+    display: block;
+  }
+}
+.FilterMenuItem-description {
+  display: block;
+  color: @muted-color;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.cardShow-upload-botton{
+  float: right;
+}
+
+.cardShow-fresh{
+  float: right;
+  padding: 8px 12px;
+  text-align: center;
+  margin-left: 5px;
+  width: 38px
+}
+
+.cardShow-more{
+  margin-top: 15px;
+  text-align: center;
+}
